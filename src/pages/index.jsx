@@ -1,16 +1,12 @@
-import { graphql } from "gatsby"
-import * as React from "react"
-import {useState} from "react"
-import { DefaultLayout } from "../templates/DefaultLayout"
+import { graphql } from 'gatsby';
+import * as React from 'react';
+import { useState } from 'react';
+import { DefaultLayout } from '../templates/DefaultLayout';
 // markup
-const IndexPage = ({data}) => {
-  const [pageInfo,setPageInfo] = useState("Home")
-  return (
-    <DefaultLayout pageInfo={pageInfo} imageData={data}>
-
-    </DefaultLayout>
-  )
-}
+const IndexPage = ({ data }) => {
+  const [pageInfo, setPageInfo] = useState('Home');
+  return <DefaultLayout pageInfo={pageInfo} imageData={data}></DefaultLayout>;
+};
 
 export const query = graphql`
   query MyQuery {
@@ -30,5 +26,4 @@ export const query = graphql`
   }
 `;
 
-
-export default IndexPage
+export default IndexPage;
