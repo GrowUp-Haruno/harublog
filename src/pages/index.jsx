@@ -5,7 +5,7 @@ import { DefaultLayout } from '../templates/DefaultLayout';
 // markup
 const IndexPage = ({ data }) => {
   const [pageInfo, setPageInfo] = useState('Home');
-  return <DefaultLayout pageInfo={pageInfo} imageData={data}></DefaultLayout>;
+  return <DefaultLayout pageInfo={pageInfo} imageData={data}>test</DefaultLayout>;
 };
 
 export const query = graphql`
